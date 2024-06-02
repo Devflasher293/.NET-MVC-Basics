@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - Essentials/Miscellaneous</title>
+</head>
+<body>
+    <header>
+        <img src="/img//code-solid.svg" alt="Logo" style="width: 90px; height: 60px;" />
+
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="About">About</a></li>
+                <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                <li><a asp-controller="Home" asp-action="Projects">Projects</a></li>
+                <li><a href="/FeverCheck">Fever Checker</a></li> 
+                <li><a href="/GuessingGame">Guessing game</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Essentials/Miscellaneous</p>
+    </footer>
+</body>
+</html>
